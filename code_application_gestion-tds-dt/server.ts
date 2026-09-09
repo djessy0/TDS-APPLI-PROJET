@@ -913,6 +913,7 @@ async function initDb(database: any) {
       ['DSN', 'password123', 'Demba', 'NDIAYE', 'admin', 'Siège'],
       ['CHN', 'password123', 'Florent', 'CHAHINIAN', 'admin', 'MR-MGA'],
       ['DSO', 'DSO2026', 'David', 'SOULARD', 'admin', 'Siège']
+      ['MAY', 'maysha', 'Maysha', 'ADMIN', 'admin', 'Siège']
     ];
     for (const u of seedUsers) {
       await database.run(
