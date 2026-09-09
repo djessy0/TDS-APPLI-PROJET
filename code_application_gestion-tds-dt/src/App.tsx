@@ -954,7 +954,7 @@ const Login = ({ onLogin }: { onLogin: (user: User) => void }) => {
   <div 
     className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
     style={{ 
-     backgroundImage: 'url("https://www.magnific.com/fr/photos/arabe")',,
+     backgroundImage: 'url("https://www.magnific.com/fr/photos/arabe")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       filter: 'brightness(0.5)' // 👈 Assombrit légèrement le fond pour faire ressortir la boîte de connexion
