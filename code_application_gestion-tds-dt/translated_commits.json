@@ -1,0 +1,362 @@
+{
+  "7987222": {
+    "summary": "refactor: supprimer le style de bordure conditionnel dans le tableau",
+    "details": "Nettoyer le rendu des cellules du tableau en supprimant le style spécifique de week-end MR-MGA pour maintenir une interface utilisateur cohérente pour toutes les entités."
+  },
+  "feat : integrate Gemini for automated commit translation": {
+    "summary": "feat : intégration de l'API Gemini pour la traduction automatique",
+    "details": "Ajout du client API Google Gemini côté serveur pour traduire automatiquement en français les messages de commits."
+  },
+  "feat: integrate Gemini for automated commit translation": {
+    "summary": "feat : intégration de l'API Gemini pour la traduction automatique",
+    "details": "Ajout du client API Google Gemini côté serveur pour traduire automatiquement en français les messages de commits."
+  },
+  "style : update expiration status colors to blue": {
+    "summary": "style : modification de la couleur des échéances en bleu",
+    "details": "Remplacement des styles clignotants vert et turquoise par une couleur bleue fixe pour les habilitations expirant sous 3 à 6 mois afin d'améliorer la clarté visuelle."
+  },
+  "style: update expiration status colors to blue": {
+    "summary": "style : modification de la couleur des échéances en bleu",
+    "details": "Remplacement des styles clignotants vert et turquoise par une couleur bleue fixe pour les habilitations expirant sous 3 à 6 mois afin d'améliorer la clarté visuelle."
+  },
+  "fix : adjust week separator colSpan for MR-MGA": {
+    "summary": "fix : ajustement du colSpan du séparateur de semaine pour MR-MGA",
+    "details": "Mise à jour de la portée des colonnes du séparateur pour garantir un alignement cohérent lors du rendu du tableau de service MR-MGA."
+  },
+  "fix: adjust week separator colSpan for MR-MGA": {
+    "summary": "fix : ajustement du colSpan du séparateur de semaine pour MR-MGA",
+    "details": "Mise à jour de la portée des colonnes du séparateur pour garantir un alignement cohérent lors du rendu du tableau de service MR-MGA."
+  },
+  "style : adjust MR-MGA table header widths": {
+    "summary": "style : ajustement de la largeur des en-têtes pour MR-MGA",
+    "details": "Mise à jour de la largeur des colonnes figées et de la taille de police du tableau de service MR-MGA pour optimiser la lisibilité."
+  },
+  "style: adjust MR-MGA table header widths": {
+    "summary": "style : ajustement de la largeur des en-têtes pour MR-MGA",
+    "details": "Mise à jour de la largeur des colonnes figées et de la taille de police du tableau de service MR-MGA pour optimiser la lisibilité."
+  },
+  "style : adjust table layout for MR-MGA entity": {
+    "summary": "style : ajustement de la disposition du tableau MR-MGA",
+    "details": "Optimisation de la largeur des colonnes et de la position figée des colonnes Date et Équipe dans le tableau de service MR-MGA pour une meilleure lisibilité."
+  },
+  "style: adjust table layout for MR-MGA entity": {
+    "summary": "style : ajustement de la disposition du tableau MR-MGA",
+    "details": "Optimisation de la largeur des colonnes et de la position figée des colonnes Date et Équipe dans le tableau de service MR-MGA pour une meilleure lisibilité."
+  },
+  "19ed15a": {
+    "summary": "feat: ajouter un disjoncteur pour la traduction Gemini",
+    "details": "Désactiver automatiquement les appels à l'API Gemini en cas d'erreurs de clé API non valide afin d'éviter les échecs de requêtes répétés et de garantir le repli vers la traduction basée sur le dictionnaire."
+  },
+  "feat: add circuit breaker for Gemini translation": {
+    "summary": "feat: ajouter un disjoncteur pour la traduction Gemini",
+    "details": "Désactiver automatiquement les appels à l'API Gemini en cas d'erreurs de clé API non valide afin d'éviter les échecs de requêtes répétés et de garantir le repli vers la traduction basée sur le dictionnaire."
+  },
+  "ff50c20": {
+    "summary": "refactor: améliorer la logique des dates de mise à jour et le nettoyage",
+    "details": "- Trier les mises à jour de l'application par ID pour s'assurer que la dernière version est bien identifiée.\n- Améliorer la robustesse de l'analyse des dates avec des formats de repli manuels.\n- Supprimer la logique de traduction redondante sur le serveur."
+  },
+  "refactor: improve update date logic and cleanup": {
+    "summary": "refactor: améliorer la logique des dates de mise à jour et le nettoyage",
+    "details": "- Trier les mises à jour de l'application par ID pour s'assurer que la dernière version est bien identifiée.\n- Améliorer la robustesse de l'analyse des dates avec des formats de repli manuels.\n- Supprimer la logique de traduction redondante sur le serveur."
+  },
+  "747a0c9": {
+    "summary": "chore: améliorer l'analyse de la traduction des messages de commit",
+    "details": "Mettre à jour les expressions régulières pour prendre en charge des espacements flexibles autour des deux-points et des parenthèses, et ajouter de nouvelles correspondances au dictionnaire de traduction afin d'améliorer la prise en charge de la localisation des journaux de commit."
+  },
+  "chore: improve commit message translation parsing": {
+    "summary": "chore: améliorer l'analyse de la traduction des messages de commit",
+    "details": "Mettre à jour les expressions régulières pour prendre en charge des espacements flexibles autour des deux-points et des parenthèses, et ajouter de nouvelles correspondances au dictionnaire de traduction afin d'améliorer la prise en charge de la localisation des journaux de commit."
+  },
+  "7772e32": {
+    "summary": "feat: ajout de la traduction Gemini et du versionnage dynamique",
+    "details": "- Intégration de l'API Google Gemini pour la traduction automatique en français des messages de commit.\n- Implémentation de l'affichage dynamique de la version et de la date dans l'interface utilisateur (UI) selon les mises à jour du dépôt.\n- Mise à jour de la configuration du dépôt GitHub.\n- Documentation des règles de logique métier spécifiques à MR-MGA dans AGENTS.md."
+  },
+  "feat: add Gemini translation and dynamic versioning": {
+    "summary": "feat: ajout de la traduction Gemini et du versionnage dynamique",
+    "details": "- Intégration de l'API Google Gemini pour la traduction automatique en français des messages de commit.\n- Implémentation de l'affichage dynamique de la version et de la date dans l'interface utilisateur (UI) selon les mises à jour du dépôt.\n- Mise à jour de la configuration du dépôt GitHub.\n- Documentation des règles de logique métier spécifiques à MR-MGA dans AGENTS.md."
+  },
+  "45f0038": {
+    "summary": "fix: ajuster le style des commentaires pour l'entité MR-MGA",
+    "details": "Mettre à jour le formatage de l'affichage des commentaires afin d'améliorer la lisibilité pour l'entité MR-MGA en activant le retour automatique à la ligne et en ajustant la taille de la police."
+  },
+  "fix: adjust comment styling for MR-MGA entity": {
+    "summary": "fix: ajuster le style des commentaires pour l'entité MR-MGA",
+    "details": "Mettre à jour le formatage de l'affichage des commentaires afin d'améliorer la lisibilité pour l'entité MR-MGA en activant le retour automatique à la ligne et en ajustant la taille de la police."
+  },
+  "ed20950": {
+    "summary": "fix: ajuster la mise en page de la légende pour MR-MGA en mode impression",
+    "details": "Masquer la colonne de légende pour MR-MGA lors de l'impression afin d'optimiser l'espace et la mise en page du document."
+  },
+  "fix: adjust legend layout for MR-MGA in print mode": {
+    "summary": "fix: ajuster la mise en page de la légende pour MR-MGA en mode impression",
+    "details": "Masquer la colonne de légende pour MR-MGA lors de l'impression afin d'optimiser l'espace et la mise en page du document."
+  },
+  "a8cc418": {
+    "summary": "feat(ui): afficher le libellé de statut dans l'info-bulle pour MR-MGA",
+    "details": "Améliorer la fonctionnalité d'info-bulle pour les entrées MR-MGA afin d'afficher le libellé de statut aux côtés du commentaire optionnel, améliorant ainsi la lisibilité et la clarté des informations."
+  },
+  "feat(ui): display status label in tooltip for MR-MGA": {
+    "summary": "feat(ui): afficher le libellé de statut dans l'info-bulle pour MR-MGA",
+    "details": "Améliorer la fonctionnalité d'info-bulle pour les entrées MR-MGA afin d'afficher le libellé de statut aux côtés du commentaire optionnel, améliorant ainsi la lisibilité et la clarté des informations."
+  },
+  "c8f5881": {
+    "summary": "refactor: simplifier la logique de priorité des statuts",
+    "details": "Remplacer les vérifications conditionnelles manuelles par une recherche dans un tableau ordonné afin d'améliorer la maintenabilité et la lisibilité de l'attribution de la priorité des statuts."
+  },
+  "refactor: simplify status priority logic": {
+    "summary": "refactor: simplifier la logique de priorité des statuts",
+    "details": "Remplacer les vérifications conditionnelles manuelles par une recherche dans un tableau ordonné afin d'améliorer la maintenabilité et la lisibilité de l'attribution de la priorité des statuts."
+  },
+  "ae0e1fa": {
+    "summary": "fix(shifts): exclure les week-ends du calcul des entrées hebdomadaires",
+    "details": "Mettre à jour la logique de filtrage des entrées pour ignorer les samedis et dimanches lors du calcul des totaux hebdomadaires pour les utilisateurs."
+  },
+  "fix(shifts): exclude weekends from weekly entry counts": {
+    "summary": "fix(shifts): exclure les week-ends du calcul des entrées hebdomadaires",
+    "details": "Mettre à jour la logique de filtrage des entrées pour ignorer les samedis et dimanches lors du calcul des totaux hebdomadaires pour les utilisateurs."
+  },
+  "bc16d99": {
+    "summary": "fix: mettre à jour la logique d'affichage des jours de repos MR-MGA",
+    "details": "Ajuster les conditions d'affichage des statuts 'OFF' dans MR-MGA afin de garantir un rendu cohérent au sein du planning de service."
+  },
+  "fix: update display logic for MR-MGA off-days": {
+    "summary": "fix: mettre à jour la logique d'affichage des jours de repos MR-MGA",
+    "details": "Ajuster les conditions d'affichage des statuts 'OFF' dans MR-MGA afin de garantir un rendu cohérent au sein du planning de service."
+  },
+  "70a0f35": {
+    "summary": "feat: ajouter le statut EPI et mettre à jour la logique de remplissage automatique",
+    "details": "Inclure le statut EPI dans la liste des statuts et affiner le classement des priorités de remplissage automatique afin de prendre en charge un plus large éventail de statuts pour la planification MGA."
+  },
+  "feat: add EPI status and update auto-fill logic": {
+    "summary": "feat: ajouter le statut EPI et mettre à jour la logique de remplissage automatique",
+    "details": "Inclure le statut EPI dans la liste des statuts et affiner le classement des priorités de remplissage automatique afin de prendre en charge un plus large éventail de statuts pour la planification MGA."
+  },
+  "47b6d01": {
+    "summary": "feat: ajouter des alertes d'expiration automatisées et le style de l'interface utilisateur",
+    "details": "Implémenter le suivi en base de données pour les alertes d'expiration des titres professionnels et mettre à jour l'interface utilisateur avec des indicateurs de statut à code couleur afin d'améliorer le suivi des échéances à venir."
+  },
+  "feat: add automated expiry alerts and UI styling": {
+    "summary": "feat: ajouter des alertes d'expiration automatisées et le style de l'interface utilisateur",
+    "details": "Implémenter le suivi en base de données pour les alertes d'expiration des titres professionnels et mettre à jour l'interface utilisateur avec des indicateurs de statut à code couleur afin d'améliorer le suivi des échéances à venir."
+  },
+  "92c8bab": {
+    "summary": "refactor: corriger la logique de statut synthétisé dans App.tsx",
+    "details": "Ajuster la portée de la synthèse de statut pour garantir que les entrées actuellement sauvegardées soient correctement traitées, même lorsqu'aucun décompte quotidien valide n'existe."
+  },
+  "refactor: fix synthesized status logic in App.tsx": {
+    "summary": "refactor: corriger la logique de statut synthétisé dans App.tsx",
+    "details": "Ajuster la portée de la synthèse de statut pour garantir que les entrées actuellement sauvegardées soient correctement traitées, même lorsqu'aucun décompte quotidien valide n'existe."
+  },
+  "2ae25b6": {
+    "summary": "refactor: supprimer le nettoyage redondant des entrées hebdomadaires",
+    "details": "Supprime la logique qui efface explicitement les entrées hebdomadaires lorsqu'aucun statut valide n'est fourni, car elle n'est plus nécessaire pour la gestion de l'état actuel."
+  },
+  "refactor: remove redundant weekly entry cleanup": {
+    "summary": "refactor: supprimer le nettoyage redondant des entrées hebdomadaires",
+    "details": "Supprime la logique qui efface explicitement les entrées hebdomadaires lorsqu'aucun statut valide n'est fourni, car elle n'est plus nécessaire pour la gestion de l'état actuel."
+  },
+  "cabc77e": {
+    "summary": "fix: effacer les entrées de la base de données en cas de statut hebdomadaire vide",
+    "details": "S'assurer que, lorsqu'aucun statut valide n'est fourni pour une semaine, toute entrée existante dans la base de données soit effacée afin de garantir la cohérence des données."
+  },
+  "fix: clear database entries for empty weekly status": {
+    "summary": "fix: effacer les entrées de la base de données en cas de statut hebdomadaire vide",
+    "details": "S'assurer que, lorsqu'aucun statut valide n'est fourni pour une semaine, toute entrée existante dans la base de données soit effacée afin de garantir la cohérence des données."
+  },
+  "ba1815f": {
+    "summary": "fix: restreindre l'association des entrées hebdomadaires pour MR-MGA",
+    "details": "Exclure la logique de repli des entrées hebdomadaires pour les utilisateurs de MR-MGA afin de garantir la bonne résolution des entrées quotidiennes dans le planning de service."
+  },
+  "fix: restrict weekly entry matching for MR-MGA": {
+    "summary": "fix: restreindre l'association des entrées hebdomadaires pour MR-MGA",
+    "details": "Exclure la logique de repli des entrées hebdomadaires pour les utilisateurs de MR-MGA afin de garantir la bonne résolution des entrées quotidiennes dans le planning de service."
+  },
+  "834d102": {
+    "summary": "feat(mail): implémenter le workflow d'e-mails et la gestion des modèles",
+    "details": "Ajout de la logique de routage des e-mails en backend pour les modes opérationnel/test et création d'une interface de configuration dans le panneau d'administration pour personnaliser les modèles, les objets et les destinataires des e-mails."
+  },
+  "feat(mail): implement email workflow and template management": {
+    "summary": "feat(mail): implémenter le workflow d'e-mails et la gestion des modèles",
+    "details": "Ajout de la logique de routage des e-mails en backend pour les modes opérationnel/test et création d'une interface de configuration dans le panneau d'administration pour personnaliser les modèles, les objets et les destinataires des e-mails."
+  },
+  "4285b24": {
+    "summary": "fix: ajuster la taille de l'en-tête de trigramme pour l'impression MR-TTA",
+    "details": "Mettre à jour le CSS et les classes d'en-tête pour garantir une taille de police correcte pour les entités MR-TTA lors des opérations d'impression."
+  },
+  "fix: adjust trigram header sizing for MR-TTA print": {
+    "summary": "fix: ajuster la taille de l'en-tête de trigramme pour l'impression MR-TTA",
+    "details": "Mettre à jour le CSS et les classes d'en-tête pour garantir une taille de police correcte pour les entités MR-TTA lors des opérations d'impression."
+  },
+  "4bb1d8e": {
+    "summary": "style: augmenter la taille de la police pour les trigrammes MR-TTA",
+    "details": "Ajuster la taille du texte d'impression pour les en-têtes de trigrammes MR-TTA afin d'améliorer la lisibilité dans les rapports imprimés."
+  },
+  "style: increase font size for MR-TTA trigrams": {
+    "summary": "style: augmenter la taille de la police pour les trigrammes MR-TTA",
+    "details": "Ajuster la taille du texte d'impression pour les en-têtes de trigrammes MR-TTA afin d'améliorer la lisibilité dans les rapports imprimés."
+  },
+  "c94f050": {
+    "summary": "style(ui): mettre à jour les couleurs d'absence pour l'entité MR-TTA",
+    "details": "Appliquer un style spécifique dans les tons de gris pour les statuts d'absence (ABS, ABS_V, ABS_D) lorsque l'entité est définie sur MR-TTA."
+  },
+  "style(ui): update absence colors for MR-TTA entity": {
+    "summary": "style(ui): mettre à jour les couleurs d'absence pour l'entité MR-TTA",
+    "details": "Appliquer un style spécifique dans les tons de gris pour les statuts d'absence (ABS, ABS_V, ABS_D) lorsque l'entité est définie sur MR-TTA."
+  },
+  "491e682": {
+    "summary": "fix: masquer les commentaires pour l'entité MR-TTA dans l'affichage du service",
+    "details": "Désactiver les infobulles et les indicateurs de commentaire pour l'entité MR-TTA afin de répondre aux exigences d'affichage spécifiques."
+  },
+  "fix: hide comments for MR-TTA entity in service display": {
+    "summary": "fix: masquer les commentaires pour l'entité MR-TTA dans l'affichage du service",
+    "details": "Désactiver les infobulles et les indicateurs de commentaire pour l'entité MR-TTA afin de répondre aux exigences d'affichage spécifiques."
+  },
+  "fe20f02": {
+    "summary": "fix(ui): empêcher l'affichage des commentaires pour l'entité MR-TTA",
+    "details": "Restreint la visibilité des commentaires de saisie spécifiquement pour l'entité MR-TTA dans l'affichage du tableau des services."
+  },
+  "fix(ui): prevent comment display for MR-TTA entity": {
+    "summary": "fix(ui): empêcher l'affichage des commentaires pour l'entité MR-TTA",
+    "details": "Restreint la visibilité des commentaires de saisie spécifiquement pour l'entité MR-TTA dans l'affichage du tableau des services."
+  },
+  "fa7e04d": {
+    "summary": "feat: appliquer un style spécifique pour FOR dans MR-TTA",
+    "details": "Mettre à jour getStatusColor pour gérer le style spécifique à l'entité, en utilisant une couleur distincte pour Formation (FOR) lorsque l'entité est MR-TTA."
+  },
+  "feat: apply specific style for FOR in MR-TTA": {
+    "summary": "feat: appliquer un style spécifique pour FOR dans MR-TTA",
+    "details": "Mettre à jour getStatusColor pour gérer le style spécifique à l'entité, en utilisant une couleur distincte pour Formation (FOR) lorsque l'entité est MR-TTA."
+  },
+  "bb01829": {
+    "summary": "fix(ui): ajuster la taille des polices pour la mise en page d'impression de MR-TTA",
+    "details": "Standardiser les tailles de police d'impression et améliorer la lisibilité du texte pour l'entité MR-TTA en augmentant l'échelle des polices en mode impression."
+  },
+  "fix(ui): adjust font sizes for MR-TTA print layout": {
+    "summary": "fix(ui): ajuster la taille des polices pour la mise en page d'impression de MR-TTA",
+    "details": "Standardiser les tailles de police d'impression et améliorer la lisibilité du texte pour l'entité MR-TTA en augmentant l'échelle des polices en mode impression."
+  },
+  "56e02de": {
+    "summary": "feat(ui): améliorer la disposition de l'en-tête de MR-TTA",
+    "details": "Mettre à jour l'en-tête d'impression pour MR-TTA afin d'améliorer la lisibilité en mettant en valeur le numéro de semaine dans un badge dédié et en restructurant l'affichage de la date."
+  },
+  "feat(ui): enhance MR-TTA header layout": {
+    "summary": "feat(ui): améliorer la disposition de l'en-tête de MR-TTA",
+    "details": "Mettre à jour l'en-tête d'impression pour MR-TTA afin d'améliorer la lisibilité en mettant en valeur le numéro de semaine dans un badge dédié et en restructurant l'affichage de la date."
+  },
+  "8825dd5": {
+    "summary": "feat: ajouter la fonctionnalité de mise à jour annuelle en masse pour la MGA",
+    "details": "Implémenter le point de terminaison côté serveur et la logique côté client pour remplir et mettre à jour automatiquement les entrées TDS annuelles pour la division MGA en fonction des priorités de statut définies."
+  },
+  "feat: add bulk annual MGA update functionality": {
+    "summary": "feat: ajouter la fonctionnalité de mise à jour annuelle en masse pour la MGA",
+    "details": "Implémenter le point de terminaison côté serveur et la logique côté client pour remplir et mettre à jour automatiquement les entrées TDS annuelles pour la division MGA en fonction des priorités de statut définies."
+  },
+  "ba0f371": {
+    "summary": "refactor(email): supprimer les styles en ligne du modèle d'e-mail",
+    "details": "Nettoyer le modèle HTML d'e-mail en supprimant les styles CSS en ligne inutilisés afin d'améliorer la maintenabilité du code."
+  },
+  "refactor(email): remove inline styles from email template": {
+    "summary": "refactor(email): supprimer les styles en ligne du modèle d'e-mail",
+    "details": "Nettoyer le modèle HTML d'e-mail en supprimant les styles CSS en ligne inutilisés afin d'améliorer la maintenabilité du code."
+  },
+  "f5de3a6": {
+    "summary": "style: mettre à jour le style des séparateurs de semaines MR-MGA",
+    "details": "Améliorer la distinction visuelle des séparateurs de semaines MR-MGA en mettant à jour les styles d'arrière-plan et de bordure."
+  },
+  "style: update MR-MGA week separator styling": {
+    "summary": "style: mettre à jour le style des séparateurs de semaines MR-MGA",
+    "details": "Améliorer la distinction visuelle des séparateurs de semaines MR-MGA en mettant à jour les styles d'arrière-plan et de bordure."
+  },
+  "0dad707": {
+    "summary": "feat(ui): ajouter un séparateur hebdomadaire pour l'entité MR-MGA",
+    "details": "Étendre la logique d'affichage du séparateur hebdomadaire pour inclure MR-MGA et appliquer un style spécifique pour une meilleure distinction visuelle."
+  },
+  "feat(ui): add weekly separator for MR-MGA entity": {
+    "summary": "feat(ui): ajouter un séparateur hebdomadaire pour l'entité MR-MGA",
+    "details": "Étendre la logique d'affichage du séparateur hebdomadaire pour inclure MR-MGA et appliquer un style spécifique pour une meilleure distinction visuelle."
+  },
+  "refactor: remove conditional border styling in table": {
+    "summary": "refactor: supprimer le style de bordure conditionnel dans le tableau",
+    "details": "Nettoyer le rendu des cellules du tableau en supprimant le style spécifique de week-end MR-MGA pour maintenir une interface utilisateur cohérente pour toutes les entités."
+  },
+  "47f3c26": {
+    "summary": "style: mettre en évidence les week-ends de MR-MGA avec des bordures épaisses",
+    "details": "Appliquer une bordure noire de 2px aux cellules de week-end spécifiquement pour l'entité MR-MGA afin d'améliorer la distinction visuelle dans le planning."
+  },
+  "style: highlight MR-MGA weekends with thick borders": {
+    "summary": "style: mettre en évidence les week-ends de MR-MGA avec des bordures épaisses",
+    "details": "Appliquer une bordure noire de 2px aux cellules de week-end spécifiquement pour l'entité MR-MGA afin d'améliorer la distinction visuelle dans le planning."
+  },
+  "3ed6aa0": {
+    "summary": "feat: désactiver la validation et ajuster la hauteur pour MR-MGA",
+    "details": "Exclure l'entité MR-MGA du panneau de validation et augmenter la hauteur du tableau défilant pour améliorer la cohérence de la mise en page avec la vue Siège."
+  },
+  "feat: disable validation and adjust height for MR-MGA": {
+    "summary": "feat: désactiver la validation et ajuster la hauteur pour MR-MGA",
+    "details": "Exclure l'entité MR-MGA du panneau de validation et augmenter la hauteur du tableau défilant pour améliorer la cohérence de la mise en page avec la vue Siège."
+  },
+  "1702a1c": {
+    "summary": "refactor: mettre à jour les composants UI de validation MR-TTA",
+    "details": "Remplacer les indicateurs de statut standard par des éléments de légende personnalisés pour les entités spécifiques à MR-TTA afin d'améliorer la clarté de la vue de validation hebdomadaire."
+  },
+  "refactor: update MR-TTA validation UI components": {
+    "summary": "refactor: mettre à jour les composants UI de validation MR-TTA",
+    "details": "Remplacer les indicateurs de statut standard par des éléments de légende personnalisés pour les entités spécifiques à MR-TTA afin d'améliorer la clarté de la vue de validation hebdomadaire."
+  },
+  "1e362dc": {
+    "summary": "feat: supprimer les utilisateurs retraités et mettre à jour les styles d'impression",
+    "details": "- Supprimer définitivement les comptes utilisateurs JMG et SEC de la base de données\n- Ajuster la taille des polices de la mise en page d'impression pour améliorer la lisibilité et l'ajustement"
+  },
+  "feat: remove retired users and update print styles": {
+    "summary": "feat: supprimer les utilisateurs retraités et mettre à jour les styles d'impression",
+    "details": "- Supprimer définitivement les comptes utilisateurs JMG et SEC de la base de données\n- Ajuster la taille des polices de la mise en page d'impression pour améliorer la lisibilité et l'ajustement"
+  },
+  "416b209": {
+    "summary": "feat(ui): mise à jour de l'affichage et du style du statut RIT",
+    "details": "Ajouter la prise en charge du statut 'CA', mettre à jour la couleur de marque du RIT et ajuster les styles d'impression pour les en-têtes de trigrammes."
+  },
+  "feat(ui): update RIT status display and styling": {
+    "summary": "feat(ui): mise à jour de l'affichage et du style du statut RIT",
+    "details": "Ajouter la prise en charge du statut 'CA', mettre à jour la couleur de marque du RIT et ajuster les styles d'impression pour les en-têtes de trigrammes."
+  },
+  "4e2f8af": {
+    "summary": "feat: ajouter un utilitaire de traduction pour les mises à jour de commit",
+    "details": "Implémenter une correspondance de traduction pour les résumés et les détails des commits afin de prendre en charge l'affichage bilingue des journaux de mise à jour de l'application."
+  },
+  "feat: add translation utility for commit updates": {
+    "summary": "feat: ajouter un utilitaire de traduction pour les mises à jour de commit",
+    "details": "Implémenter une correspondance de traduction pour les résumés et les détails des commits afin de prendre en charge l'affichage bilingue des journaux de mise à jour de l'application."
+  },
+  "5107fef": {
+    "summary": "style: mettre à jour la couleur de MO et ajouter de nouveaux codes de service",
+    "details": "Ajuster la couleur du code MO et enregistrer les codes de service Abs et EPI afin d'améliorer la clarté visuelle et la couverture dans le planning des services."
+  },
+  "style: update MO color and add new service codes": {
+    "summary": "style: mettre à jour la couleur de MO et ajouter de nouveaux codes de service",
+    "details": "Ajuster la couleur du code MO et enregistrer les codes de service Abs et EPI afin d'améliorer la clarté visuelle et la couverture dans le planning des services."
+  },
+  "03c0b87": {
+    "summary": "feat: ajouter une légende de statut personnalisée pour l'entité MR-MGA",
+    "details": "Définir une légende de statut spécifique pour l'entité MR-MGA afin de refléter fidèlement ses rythmes de travail et types d'absence, en la séparant de la logique utilisée pour les autres entités."
+  },
+  "feat: add custom status legend for MR-MGA entity": {
+    "summary": "feat: ajouter une légende de statut personnalisée pour l'entité MR-MGA",
+    "details": "Définir une légende de statut spécifique pour l'entité MR-MGA afin de refléter fidèlement ses rythmes de travail et types d'absence, en la séparant de la logique utilisée pour les autres entités."
+  },
+  "99aed7a": {
+    "summary": "feat: autoriser l'entité MR-MGA à utiliser la recherche d'entrée simplifiée",
+    "details": "Mettre à jour getWeekEntry pour prendre en charge la logique de l'entité MR-MGA, garantissant une récupération cohérente des entrées pour les agents de ce département."
+  },
+  "feat: allow MR-MGA entity to use simplified entry lookup": {
+    "summary": "feat: autoriser l'entité MR-MGA à utiliser la recherche d'entrée simplifiée",
+    "details": "Mettre à jour getWeekEntry pour prendre en charge la logique de l'entité MR-MGA, garantissant une récupération cohérente des entrées pour les agents de ce département."
+  },
+  "86fd1b8": {
+    "summary": "fix: résoudre les incohérences dans le calcul des dates",
+    "details": "Standardiser les comparaisons de dates en forçant l'heure à midi afin d'éviter les problèmes de décalage liés au fuseau horaire lors des calculs."
+  },
+  "fix: resolve date calculation inconsistencies": {
+    "summary": "fix: résoudre les incohérences dans le calcul des dates",
+    "details": "Standardiser les comparaisons de dates en forçant l'heure à midi afin d'éviter les problèmes de décalage liés au fuseau horaire lors des calculs."
+  }
+}

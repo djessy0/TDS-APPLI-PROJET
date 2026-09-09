@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  @page {
+    size: landscape;
+    margin: 12mm 18mm !important;
+  }
+  body {
+    background: white !important;
+    font-size: 8px !important;
+  }
+  
+  /* Suppress top headers/borders that aren't useful */
+  .printable-area {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    max-width: 1050px !important;
+    width: 100% !important;
+  }
+
+  /* Compact the high-level header container */
+  .printable-area h1.text-2xl {
+    font-size: 14px !important;
+    line-height: 1.1 !important;
+  }
+  .printable-area div.pb-4 {
+    margin-bottom: 4px !important;
+    padding-bottom: 2px !important;
+    border-bottom-width: 1px !important;
+  }
+  
+  /* Compact the week/entity title header unit */
+  .printable-area div.space-y-6 {
+    gap: 4px !important;
+  }
+  .printable-area div.space-y-6 > div.p-4 {
+    padding: 2px 6px !important;
+    margin-bottom: 3px !important;
+  }
+  .printable-area div.space-y-6 > div.p-4 p.text-lg {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Squeeze table headers and cells */
+  .printable-area table {
+    margin-top: 2px !important;
+    font-size: 7.5px !important;
+    max-height: 90%;
+  }
+  
+  .printable-area table th:not(.trigram-header) {
+    padding: 2px 1px !important;
+    font-size: 7.5px !important;
+  }
+
+  .printable-area table th.trigram-header {
+    padding: 2px 1px !important;
+    font-size: 9.5px !important;
+  }
+
+  .printable-area table th.trigram-header-tta {
+    padding: 2px 1px !important;
+    font-size: 13.5px !important;
+  }
+  
+  .printable-area table td {
+    padding: 1px !important;
+    font-size: 7.5px !important;
+    height: 33px !important; /* Force tight row heights (increased by 10% from 30px) */
+  }
+
+  /* Target the inline styles container inside table cells */
+  .printable-area table td div {
+    height: 100% !important;
+  }
+
+  .printable-area table td div[style] {
+    min-height: 24px !important;
+    height: 100% !important;
+    padding: 1px 1px !important;
+    border-width: 1.2px !important;
+    border-radius: 4px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  /* Shrink text labels inside cell blocks */
+  .printable-area table td div[style] span.text-\[9\.5px\] {
+    font-size: 8px !important;
+    line-height: 1 !important;
+    margin-bottom: 0px !important;
+  }
+  .printable-area table td div[style] span.text-\[7px\] {
+    font-size: 6px !important;
+    line-height: 1 !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  /* Force first column of date list to be very compact */
+  .printable-area table td:first-child {
+    padding: 2px 3px !important;
+    line-height: 1 !important;
+  }
+  .printable-area table td:first-child span.text-\[11px\] {
+    font-size: 8.5px !important;
+  }
+  .printable-area table td:first-child span.text-\[8\.5px\] {
+    font-size: 7.5px !important;
+  }
+
+  /* Reduce the footer separation divider and margins */
+  .printable-area .mt-12 {
+    margin-top: 4px !important;
+    padding-top: 2px !important;
+  }
+  
+  /* Reduce list of agents */
+  .printable-area .mt-12 .mb-8 {
+    margin-bottom: 3px !important;
+  }
+  
+  .printable-area h3.text-xs {
+    font-size: 8px !important;
+    margin-bottom: 2px !important;
+  }
+
+  .printable-area .print\:grid-cols-6 {
+    gap: 1px 4px !important;
+  }
+  .printable-area .print\:grid-cols-6 > div {
+    font-size: 7.5px !important;
+  }
+  .printable-area .print\:grid-cols-6 span.px-1\.5 {
+    padding: 0px 2px !important;
+    min-width: 18px !important;
+    font-size: 7px !important;
+  }
+
+  /* Squeeze layout legends under TTA and other entities */
+  .printable-area .space-y-3 {
+    margin-top: 2px !important;
+  }
+  .printable-area .space-y-3 > div {
+    gap: 4px !important;
+  }
+  .printable-area .space-y-3 div.w-5 {
+    width: 12px !important;
+    height: 12px !important;
+    font-size: 7px !important;
+  }
+  .printable-area .space-y-3 span.text-\[10px\] {
+    font-size: 7.5px !important;
+    line-height: 1.1 !important;
+  }
+
+  /* Squeeze grid-based legends of cycles and statuses */
+  .printable-area .grid.print\:gap-4 {
+    gap: 4px !important;
+    margin-top: 2px !important;
+  }
+  
+  .printable-area .grid.grid-cols-2.gap-x-4 {
+    gap: 2px 6px !important;
+  }
+
+  .printable-area .grid.grid-cols-2.gap-x-4 div.w-10 {
+    width: 18px !important;
+    height: 11px !important;
+    font-size: 7px !important;
+  }
+  
+  .printable-area .grid.grid-cols-2.gap-x-4 span.text-\[10px\] {
+    font-size: 7.5px !important;
+  }
+
+  /* Squeeze other entity legends (Siège & MR-MGA) */
+  .printable-area .print\:gap-x-2 {
+    gap: 1px 4px !important;
+  }
+  
+  .printable-area .print\:gap-x-2 div.w-4 {
+    width: 10px !important;
+    height: 10px !important;
+    font-size: 7px !important;
+  }
+  
+  .printable-area .print\:gap-x-2 span.text-\[9px\] {
+    font-size: 7.5px !important;
+  }
+  
+  /* Ensure page breaks don't happen mid-table or mid-legend */
+  .printable-area, .printable-area table, .printable-area .mt-12 {
+    page-break-inside: avoid !important;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}

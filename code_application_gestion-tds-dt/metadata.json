@@ -1,0 +1,8 @@
+{
+  "name": "Gestion TDS DT",
+  "description": "Application de gestion du tableau de service pour la Division Technique de la navigation aérienne (Siège, MR-MGA, MR-TTA).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
