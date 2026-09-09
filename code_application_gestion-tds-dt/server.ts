@@ -912,17 +912,15 @@ async function initDb(database: any) {
     const seedUsers = [
       ['DSN', 'password123', 'Demba', 'NDIAYE', 'admin', 'Siège'],
       ['CHN', 'password123', 'Florent', 'CHAHINIAN', 'admin', 'MR-MGA'],
-      ['DSO', 'DSO2026', 'David', 'SOULARD', 'admin', 'Siège']
+      ['DSO', 'DSO2026', 'David', 'SOULARD', 'admin', 'Siège'],
       ['MAY', 'maysha', 'Maysha', 'ADMIN', 'admin', 'Siège']
     ];
     for (const u of seedUsers) {
       await database.run(
-        "INSERT OR IGNORE INTO users (trigram, password, firstname, lastname, role, entity) VALUES (?, ?, ?, ?, ?, ?)",
+        "INSERT INTO users (trigram, password, firstname, lastname, role, entity) VALUES (?, ?, ?, ?, ?, ?) ON CONFLICT(trigram) DO UPDATE SET password=excluded.password, role=excluded.role",
         u
       );
     }
-
-    // Migration: Corriger les statuts incohérents 'SEC' pour le Siège et autres entités
     console.log("[DB MIGRATION] Nettoyage et cohérence des statuts 'SEC'...");
     const cleanSiege = await database.run(`
       UPDATE tds_entries 
