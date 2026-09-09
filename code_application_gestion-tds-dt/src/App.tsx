@@ -950,15 +950,22 @@ const Login = ({ onLogin }: { onLogin: (user: User) => void }) => {
 
   return (
     <div className="min-h-screen flex items-center justify-center relative overflow-hidden p-4">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ 
-          backgroundImage: 'url("/background.jpg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          filter: 'brightness(0.5)'
+  {/* Image de fond avec avion */}
+  <div 
+    className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+    style={{ 
+      backgroundImage: 'url("/background.jpg")',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      filter: 'brightness(0.5)' // 👈 Assombrit légèrement le fond pour faire ressortir la boîte de connexion
+    }}
+  />
+
+  {/* Boîte de connexion blanche au centre */}
+  <div className="bg-white/90 backdrop-blur-md p-10 rounded-3xl shadow-2xl w-full max-w-md border border-white/20 z-10">
+    ...
+  </div>
+</div>
         }}
       />
       
